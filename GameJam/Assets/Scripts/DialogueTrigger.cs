@@ -5,8 +5,7 @@ public class DialogueTrigger : MonoBehaviour
 {
     public Dialogue dialogue;
 
-    public bool isInRange;
-
+    private bool isInRange;
     private Text interactUI;
 
     private void Awake()

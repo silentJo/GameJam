@@ -7,10 +7,10 @@ public class DialogueManager : MonoBehaviour
 {
     public static DialogueManager instance;
 
-    [SerializeField] private Text nameText;
-    [SerializeField] private Text dialogueText;
+    [SerializeField] private Image NPCIcon;
+    [SerializeField] private Image RequestIcon;
+    [SerializeField] private Text RequestedNumber;
     [SerializeField] private Animator animator;
-
 
     private void Awake()
     {
@@ -25,8 +25,9 @@ public class DialogueManager : MonoBehaviour
     public void StartDialogue(Dialogue dialogue)
     {
         animator.SetBool("IsOpen", true);
-        nameText.text = dialogue.name;
-        dialogueText.text = dialogue.sentence;
+        NPCIcon.sprite = dialogue.NPCIcon.sprite;
+        RequestIcon.sprite = dialogue.RequestIcon.sprite;
+        RequestedNumber.text = dialogue.RequestedNumber;
     }
 
     public void EndDialogue()

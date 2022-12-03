@@ -1,8 +1,10 @@
 using UnityEngine;
+using UnityEngine.UI;
 
 [System.Serializable]
 public class Dialogue
 {
-    public string name;
-    public string sentence;
+    public Image NPCIcon;
+    public Image RequestIcon;
+    public string RequestedNumber;
 }

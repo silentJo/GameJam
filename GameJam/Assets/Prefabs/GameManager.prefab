@@ -87,6 +87,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 94494876b502bd64ebf839cad890b914, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nameText: {fileID: 0}
-  dialogueText: {fileID: 0}
+  NPCIcon: {fileID: 0}
+  RequestIcon: {fileID: 0}
+  RequestedNumber: {fileID: 0}
   animator: {fileID: 0}
