@@ -3,10 +3,12 @@ using UnityEngine.UI;
 
 public class Ladder : MonoBehaviour
 {
-    private bool isInRange;
-    private PlayerMovement playerMovement;
     public BoxCollider2D topCollider;
+
+    private PlayerMovement playerMovement;
     private Text interactUI;
+
+    private bool isInRange;
 
     void Awake()
     {
